@@ -1,0 +1,6 @@
+@meraproject_HostAddress = http://localhost:5278
+
+GET {{meraproject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
