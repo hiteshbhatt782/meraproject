@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using meraproject.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace meraproject.Models.Entities
+namespace meraproject.Data
 {
     public class ApplicationDbContext : DbContext
 

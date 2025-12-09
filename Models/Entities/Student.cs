@@ -1,17 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace meraproject.Models
+namespace meraproject.Models.Entities
 {
     public class Student
     {
-        [Key]
-        [Display(Name ="Student Id")]
 
         public int StudentId { get; set; }
-        [Required]
-        [Display(Name="Student Name")]
+        public string PhoneNumber {  get; set; }
         public string StudentName { get; set; }
         public string? course { get; set; }
         public string email { get; set; }
+        public string address {  get; set; }
+        public bool  isActive { get; set; }
+     public ICollection<Student>Students { get; set; }   
     }
 }
