@@ -6,7 +6,7 @@
         public string BookName { get; set; }
         public string AuthorName { get; set; }
         public float Price { get; set; }
-        public int StudentId { get; set; }
-        public Student Student { get; set; }
+        //public int StudentId { get; set; }
+        //public Student Student { get; set; }
     }
 }

@@ -5,9 +5,9 @@ namespace meraproject.Interfaces.ServiceInterface
 {
     public interface IStudentServiceInterface
     {
-        Task<IEnumerable<GetStudentDto>> getstudent();
-        Task<GetStudentDto> getStudentById(int Id);
-        Task<CreateStudentDto> createstudent(GetStudentDto category);
+        Task<IEnumerable<GetStudentDto>> Getstudent();
+        Task<GetStudentDto> GetStudentById(int Id);
+        Task<GetStudentDto> Createstudent(CreateStudentDto category);
 
 
     }
