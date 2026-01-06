@@ -17,6 +17,12 @@ namespace CRUD_operation.Controllers
         {
             _service = service;
         }
+        [HttpGet("GetStudent")]
+        public async Task<IActionResult>GetStudents()
+        {
+            var student = await _service.Getstudent();
+            return Ok(student);
+        }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetStudentById(int id)
         {
@@ -28,11 +34,11 @@ namespace CRUD_operation.Controllers
             return Ok(student);
         }   
 
-        [HttpPost]
-        public async Task<IActionResult>Create(CreateStudentDto studentDto)
+        [HttpPost("createstudent")]
+        public async Task<IActionResult>CreateStudents(CreateStudentDto studentDto)
         {
-            await _service.Createstudent(studentDto);
-            return Ok();
+         var student=   await _service.Createstudent(studentDto);
+            return Ok(new {message="services created",data=student});
         }
     }
 }
