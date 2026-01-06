@@ -4,8 +4,8 @@ namespace meraproject.Interfaces.RepoInterface
 {
     public interface IStudentRepoInterface
     {
-        Task <IEnumerable<Student>> getAllCategoriesAsync();
-        Task<Student> getCategoriesbyidAsync(int id);
+        Task <IEnumerable<Student>> getAllStudentAsync();
+        Task<Student> getstudentbyidAsync(int id);
         Task<Student> createstudentAsync(Student category);
         Task<Student> updatestudentAsync(int id, Student category);
         Task<Student> deletestudentAsync(int id);
