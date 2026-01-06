@@ -7,7 +7,8 @@ namespace CRUD_operation.Mapping
     {
         public StudentProfile() 
         {
-            CreateMap<GetStudentDto, Student>();
+            CreateMap<GetStudentDto, Student>().ReverseMap();
+            CreateMap<CreateStudentDto, Student>().ReverseMap();
         }
     }
 }
